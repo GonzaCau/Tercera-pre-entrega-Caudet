@@ -1,0 +1,16 @@
+{%extends 'index.html'%}
+{%load static%}
+{%block contenidoQueCambia%}
+
+
+<h1>Plantilla Cargar Alumno</h1> 
+
+<form action="{% url 'CargaAlumno'%}" method='POST'> {% csrf_token %}
+    <p>Nombre: <input type='text' name='nombre'></p>
+    <p>Apellido: <input type='text' name='ap'></p>
+    <p>DNI: <input type='number' name='dni'></p>
+
+    <input type='submit' value='Enviar'>
+</form>
+
+{%endblock%}

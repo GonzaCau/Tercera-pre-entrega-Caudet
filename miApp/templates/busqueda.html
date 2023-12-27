@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de la busqueda</title>
+</head>
+<body>
+    <h2>Resultado de busqueda dni: {{dni}}</h2>
+    {%for alumno in alumnos:%}
+    <li>{{alumno.nombre}}</li>
+    <li>{{alumno.ap}}</li>
+    {%endfor%}
+</body>
+</html>
